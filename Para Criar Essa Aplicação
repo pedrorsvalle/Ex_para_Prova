@@ -1,0 +1,26 @@
+Criação do banco de dados MySQL:
+Crie um banco de dados com as seguintes tabelas:
+
+Tabela "usuarios": com as colunas "id", "nome", "email" e "senha";
+Tabela "tipos_produtos": com as colunas "id" e "nome";
+Tabela "produtos": com as colunas "id", "tipo_id", "nome", "descricao", "quantidade", "preco" e "estoque";
+Tabela "fotos_produtos": com as colunas "id" e "caminho".
+Criação dos formulários de cadastro:
+Crie formulários HTML com campos para inserir os dados de usuário, tipo de produto, produto e foto, respectivamente. Utilize o método "POST" para enviar os dados para o servidor PHP.
+
+Página do cardápio:
+Crie uma página HTML com um botão para exibir todos os produtos e um menu suspenso para selecionar o tipo de produto. Utilize JavaScript para enviar uma solicitação AJAX para o servidor PHP, que irá retornar os dados formatados em JSON. Utilize o método "GET" para enviar o tipo selecionado para o servidor.
+
+Filtro na página do cardápio:
+Adicione um evento de "change" no menu suspenso de tipos de produtos, para que a lista de produtos seja atualizada quando o usuário selecionar um novo tipo.
+
+Formulário de registro de pedidos:
+Crie um formulário HTML com campos para inserir as informações do pedido (usuário, produtos, quantidade, etc.). Utilize o método "POST" para enviar os dados para o servidor PHP, que irá inserir as informações no banco de dados com o estado "encaminhado para cozinha".
+
+Página da cozinha:
+Crie uma página HTML com uma tabela que exibe a lista de pedidos em tempo real. Utilize JavaScript para atualizar a tabela periodicamente. Adicione botões para atualizar o status do pedido para "aceito", "em preparo", "pronto" e "entregue". Utilize AJAX para enviar as informações para o servidor PHP, que irá alterar o estado do pedido no banco de dados.
+
+Página de carrinho:
+Crie uma página HTML com um formulário para adicionar produtos ao carrinho e um botão para finalizar o pedido. Utilize JavaScript para calcular o total do pedido e enviar as informações para o servidor PHP, que irá inserir as informações no banco de dados.
+
+Lembre-se de validar os dados inseridos pelo usuário em todos os formulários e tratar os erros adequadamente. Além disso, mantenha a segurança em mente ao lidar com informações confidenciais, como senhas e informações de pagamento.
