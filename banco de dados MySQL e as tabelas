@@ -1,0 +1,31 @@
+CREATE DATABASE meu_banco_de_dados;
+
+USE meu_banco_de_dados;
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  senha VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tipos_produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  tipo_id INT NOT NULL,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT,
+  quantidade INT NOT NULL,
+  preco DECIMAL(10,2) NOT NULL,
+  estoque INT NOT NULL,
+  FOREIGN KEY (tipo_id) REFERENCES tipos_produtos(id)
+);
+
+CREATE TABLE fotos_produtos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  caminho VARCHAR(255) NOT NULL
+);
